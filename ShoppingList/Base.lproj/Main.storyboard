@@ -123,7 +123,7 @@
             <objects>
                 <navigationController id="Kvg-wG-cEX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BYD-Gz-Z54">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -140,7 +140,7 @@
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <namedColor name="MyColorSet">
-            <color red="0.88883358941232149" green="1" blue="0.97005895722834645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.88899999856948853" green="1" blue="0.97000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
