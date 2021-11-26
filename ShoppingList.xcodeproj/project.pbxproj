@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCE3A2422751173400484E3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCEF757A274535730096C64B /* Main.storyboard */,
+				FCEF7582274535780096C64B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FCEF7568274535730096C64B = {
 			isa = PBXGroup;
 			children = (
@@ -60,24 +69,23 @@
 		FCEF7573274535730096C64B /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				FCEF758B274535FB0096C64B /* New GroupAppDelegate */,
+				FCEF758B274535FB0096C64B /* Delegate */,
+				FCE3A2422751173400484E3B /* View */,
 				FCEF758C274536170096C64B /* Controllers */,
-				FCEF757A274535730096C64B /* Main.storyboard */,
 				FCEF7580274535780096C64B /* Assets.xcassets */,
-				FCEF7582274535780096C64B /* LaunchScreen.storyboard */,
 				FCEF7585274535780096C64B /* Info.plist */,
 				FCEF757D274535730096C64B /* ShoppingList.xcdatamodeld */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
 		};
-		FCEF758B274535FB0096C64B /* New GroupAppDelegate */ = {
+		FCEF758B274535FB0096C64B /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				FCEF7574274535730096C64B /* AppDelegate.swift */,
 				FCEF7576274535730096C64B /* SceneDelegate.swift */,
 			);
-			path = "New GroupAppDelegate";
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		FCEF758C274536170096C64B /* Controllers */ = {

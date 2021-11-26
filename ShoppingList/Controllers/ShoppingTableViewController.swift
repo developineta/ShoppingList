@@ -57,17 +57,16 @@ class ShoppingTableViewController: UITableViewController {
     @IBAction func addItem(_ sender: Any) {
         
         let alertController = UIAlertController(title: "Shopping Item", message: "What do you want to add?", preferredStyle: .alert)
-       
+        
         
         alertController.addTextField(configurationHandler: {(_ textField: UITextField) -> Void in
-                textField.placeholder = "item name..."
-
-            })
-
-            // add textfield at index 1
-            alertController.addTextField(configurationHandler: {(_ textField: UITextField) -> Void in
-                textField.placeholder = "quantity..."
-            })
+            textField.placeholder = "item name..."
+        })
+        
+        // add textfield at index 1
+        alertController.addTextField(configurationHandler: {(_ textField: UITextField) -> Void in
+            textField.placeholder = "quantity..."
+        })
         
         let addActionButton = UIAlertAction(title: "Add", style: .default) { action in
             let itemField = alertController.textFields?[0]
@@ -78,7 +77,7 @@ class ShoppingTableViewController: UITableViewController {
             
             shop.setValue(itemField?.text, forKey: "item")
             shop.setValue(quantityField?.text, forKey: "count")
-         
+            
             
             self.saveData()
             self.tableView.reloadData()
@@ -91,7 +90,7 @@ class ShoppingTableViewController: UITableViewController {
         
         present(alertController, animated: true, completion: nil)
     }
-
+    
     
     @IBAction func deleteItems(_ sender: Any) {
         if shopping.count != 0 {
@@ -144,18 +143,18 @@ class ShoppingTableViewController: UITableViewController {
     }
     
     
-     // MARK: - Navigation
-     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if segue.identifier == "shopping"{
-             // Get the new view controller using segue.destination.
-             let vc = segue.destination as! InfoViewController
-             // Pass the selected object to the new view controller.
-             vc.infoText = "\tThis is an amazing shopping application that lets You choose anything You want! By anything we mean from pencil ✏️ to airplane ✈️\n\tAnything from A to Z. Additionally you can choose any quantity for your order. We will take care for the rest.\nEnjoy Your Shopping! 😊"
-         }
-     }
- }
-
+    // MARK: - Navigation
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "shopping"{
+            // Get the new view controller using segue.destination.
+            let vc = segue.destination as! InfoViewController
+            // Pass the selected object to the new view controller.
+            vc.infoText = "\tThis is an amazing shopping application that lets You choose anything You want! By anything we mean from pencil ✏️ to airplane ✈️\n\tAnything from A to Z. Additionally you can choose any quantity for your order. We will take care for the rest.\nEnjoy Your Shopping! 😊"
+        }
+    }
+}
+
+
 
 
